@@ -37,43 +37,37 @@ function App() {
       <div className="container dflex align-center flex-column">
         <h1>Our Menu</h1>
         <ul className="type-of-food">
-          <li>
-            <button
-              name="all"
-              onClick={changeTypeHandler}
-              className={typeToShow === TypeOfFood.all ? "btn-active" : ""}
-            >
+          <li className="dflex flex-column align-center">
+            <button name="all" onClick={changeTypeHandler}>
               All
             </button>
+            {typeToShow === TypeOfFood.all && (
+              <span className="underline"></span>
+            )}
           </li>
           <li>
-            <button
-              name="breakfast"
-              onClick={changeTypeHandler}
-              className={
-                typeToShow === TypeOfFood.breakfast ? "btn-active" : ""
-              }
-            >
+            <button name="breakfast" onClick={changeTypeHandler}>
               Breakfast
             </button>
+            {typeToShow === TypeOfFood.breakfast && (
+              <span className="underline"></span>
+            )}
           </li>
           <li>
-            <button
-              name="lunch"
-              onClick={changeTypeHandler}
-              className={typeToShow === TypeOfFood.lunch ? "btn-active" : ""}
-            >
+            <button name="lunch" onClick={changeTypeHandler}>
               Lunch
             </button>
+            {typeToShow === TypeOfFood.lunch && (
+              <span className="underline"></span>
+            )}
           </li>
           <li>
-            <button
-              name="shake"
-              onClick={changeTypeHandler}
-              className={typeToShow === TypeOfFood.shake ? "btn-active" : ""}
-            >
+            <button name="shake" onClick={changeTypeHandler}>
               Shakes
             </button>
+            {typeToShow === TypeOfFood.shake && (
+              <span className="underline"></span>
+            )}
           </li>
         </ul>
         <FoodList

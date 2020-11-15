@@ -12,7 +12,7 @@ export default function FoodListItem({ item, onClick, checked }: Props) {
   return (
     <div className="card" onClick={() => onClick(item.id)}>
       <div>
-        <img src={`assets/${item.image}.jpeg`} className="card-image" />
+        <img src={`image/${item.image}.jpeg`} className="card-image" />
       </div>
       <div className="card-info">
         <div className="card_title-wrapper">

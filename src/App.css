@@ -77,11 +77,12 @@ img {
 }
 
 .type-of-food li {
+  position: relative;
+  margin-right: 1rem;
   list-style: none;
 }
 .type-of-food button {
   padding: 8px 14px;
-  margin-right: 1rem;
   border: none;
   border-radius: 5px;
   color: var(--main-color);
@@ -97,7 +98,16 @@ img {
 }
 
 button.btn-active {
-  border-bottom: 2px solid var(--main-color);
+  /* border-bottom: 2px solid var(--main-color); */
+}
+
+.underline {
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: var(--main-color);
 }
 
 .food-list {
